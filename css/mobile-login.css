@@ -1,0 +1,87 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --white: #fff;
+    --textInputField: #f7f7f7;
+    --black: #000;
+    --hospitalGreen: #acd9b2;
+    --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-login-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+}
+.logo {
+    width: 15rem;
+    margin-bottom: 4.8rem;
+    justify-self: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: .4rem;
+}
+.input {
+    background: var(--textInputField);
+    border: none;
+    border-radius: .8rem;
+    height: 3rem;
+    font-size: var(--md);
+    padding: .8rem;
+    margin-bottom: 2.4rem;
+}
+.primary-button {
+    background: var(--hospitalGreen);
+    border: none;
+    color: var(--white);
+    border-radius: .8rem;
+    width: 100%;
+    height: 4.2rem;
+    margin: 1.2rem 0 2.4rem;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.secondary-button {
+    background: var(--white);
+    color: var(--hospitalGreen);
+    border: .1rem solid var(--hospitalGreen);
+    border-radius: .8rem;
+    width: 100%;
+    height: 4.2rem;
+    cursor: pointer;
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.forgot {
+    font-size: var(--sm);
+    text-align: center;
+    color: var(--hospitalGreen);
+    text-decoration: none;
+    margin-bottom: 4.8rem;
+}
