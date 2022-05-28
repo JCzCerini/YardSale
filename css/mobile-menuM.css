@@ -1,0 +1,60 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --white: #fff;
+    --textInputField: #f7f7f7;
+    --black: #000;
+    --hospitalGreen: #acd9b2;
+    --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+}
+.menu-mobile ul {
+    list-style: none;
+}
+.info-buy ul:nth-child(1) {
+    border-top: .1rem solid var(--textInputField);
+}
+.menu-mobile ul li {
+    padding: 2.4rem;
+    text-decoration: none;
+}
+.menu-mobile a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.sesion a {
+    font-size: var(--sm);
+    font-weight: 300;
+    color: var(--hospitalGreen);
+}
+.sesion ul li:nth-child(1) {
+    padding-bottom: 0;
+}
+.sesion ul li:nth-child(2) {
+    padding-top: .5rem;
+    font-weight: bold;
+}
+.sesion .email {
+    color: var(--black);
+}
