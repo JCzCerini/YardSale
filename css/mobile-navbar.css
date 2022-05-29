@@ -1,0 +1,73 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --white: #fff;
+    --textInputField: #f7f7f7;
+    --black: #000;
+    --hospitalGreen: #acd9b2;
+    --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 5.6rem;
+    box-shadow: 0 0 .5rem var(--veryLightPink);
+}
+.menu {
+    display: none;
+}
+.navbar-left, 
+.navbar-right {
+    display: flex; 
+}
+.navbar-left {
+    width: 90rem;
+    justify-content: space-evenly;
+}
+.logo {
+    width: 14rem;
+}
+.nav-menu {
+    width: 60rem;
+    list-style: none;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+}
+.nav-menu li {
+  width: 10rem;
+}
+.nav-menu li a {
+  color: var(--veryLightPink);
+  text-decoration: none;
+  text-align: center;
+}
+.nav-menu li a:hover {
+  cursor: pointer;
+  color: var(--hospitalGreen);
+  border: .1rem solid var(--hospitalGreen);
+  border-radius: 1.2rem;
+  padding: 0 .8rem;
+  font-weight: bold;
+}
+.navbar-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 5.6rem;
+    justify-content: space-evenly;
+}
