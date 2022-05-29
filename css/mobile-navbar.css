@@ -21,53 +21,73 @@ body {
     font-size: 1.6rem;
     font-family: 'Quicksand', sans-serif;
 }
-.navbar-container {
+nav {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     height: 5.6rem;
+    justify-content: space-between;
+    padding: 0 2.4rem;
     box-shadow: 0 0 .5rem var(--veryLightPink);
 }
 .menu {
-    display: none;
-}
-.navbar-left, 
-.navbar-right {
-    display: flex; 
-}
-.navbar-left {
-    width: 90rem;
-    justify-content: space-evenly;
+    display: block;
+    width: 3rem;
 }
 .logo {
-    width: 14rem;
+    width: 10rem;
 }
-.nav-menu {
-    width: 60rem;
-    list-style: none;
-    height: 5.6rem;
-    display: flex;
-    align-items: center;
-}
-.nav-menu li {
-  width: 10rem;
-}
-.nav-menu li a {
-  color: var(--veryLightPink);
-  text-decoration: none;
-  text-align: center;
-}
-.nav-menu li a:hover {
-  cursor: pointer;
-  color: var(--hospitalGreen);
-  border: .1rem solid var(--hospitalGreen);
-  border-radius: 1.2rem;
-  padding: 0 .8rem;
-  font-weight: bold;
-}
+.navbar-left ul,
 .navbar-right ul {
-    list-style: none;
     display: flex;
     align-items: center;
+    list-style: none;
     height: 5.6rem;
-    justify-content: space-evenly;
+}
+.navbar-left ul {
+    display: none;
+}
+.navbar-left {
+    display: flex;
+}
+.navbar-left ul {
+    margin-left: 1.2rem;
+}
+.navbar-left ul li a,
+.navbar-right ul li a {
+    text-decoration: none;
+    color: var(--veryLightPink);
+    border: .1rem solid var(--white);
+    padding: .8rem;
+    border-radius: .8rem;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover {
+    color: var(--hospitalGreen);
+    border: .1rem solid var(--hospitalGreen);
+    font-weight: bold;
+}
+.navbar-email {
+    display: none;
+}
+.navbar-email {
+    color: var(--veryLightPink);
+    font-size: var(--sm);
+}
+.navbar-shopping-cart {
+    position: relative;
+    margin-right: 1.2rem;
+}
+.navbar-shopping-cart div {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: var(--hospitalGreen);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -.6rem;
+    right: -.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
