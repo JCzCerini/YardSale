@@ -72,22 +72,5 @@ nav {
 .navbar-email {
     color: var(--veryLightPink);
     font-size: var(--sm);
-}
-.navbar-shopping-cart {
-    position: relative;
     margin-right: 1.2rem;
-}
-.navbar-shopping-cart div {
-    width: 1.6rem;
-    height: 1.6rem;
-    background: var(--hospitalGreen);
-    border-radius: 50%;
-    font-size: var(--sm);
-    font-weight: bold;
-    position: absolute;
-    top: -.6rem;
-    right: -.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

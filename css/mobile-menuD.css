@@ -1,0 +1,51 @@
+:root {
+    --veryLightPink: #c7c7c7;
+    --white: #fff;
+    --textInputField: #f7f7f7;
+    --black: #000;
+    --hospitalGreen: #acd9b2;
+    --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.desktop-menu {
+    width: 15rem;
+    height: auto;
+    border: .1rem solid var(--veryLightPink);
+    border-radius: .6rem;
+    padding: 2rem 2rem 0;
+}
+.desktop-menu ul {
+    list-style: none;
+}
+.desktop-menu ul li {
+    text-align: end;
+    font-weight: bold;
+}
+.desktop-menu ul li:last-child {
+    padding-top: 2rem;
+    border-top: .1rem solid var(--veryLightPink);
+}
+.desktop-menu ul li:last-child a {
+    color: var(--hospitalGreen);
+    font-size: var(--sm);
+}
+.desktop-menu ul li a {
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
